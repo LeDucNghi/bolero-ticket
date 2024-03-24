@@ -1,0 +1,103 @@
+@import "../../../public/styles/index.scss";
+
+.banner-container {
+    position: relative;
+
+    width: 100%;
+    height: 100vh;
+
+    .banner-backdrop {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        inset: 0;
+
+        background: rgba(0, 18, 50, 0.4);
+        z-index: 10;
+    }
+
+    .banner-image {
+        width: 100%;
+        height: 100%;
+
+        img {
+            position: fixed;
+
+            @include img-fit();
+
+            opacity: 0.3;
+        }
+    }
+
+    .banner-content {
+        position: absolute;
+
+        width: 60%;
+
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        text-align: center;
+
+        z-index: 20;
+
+        color: white;
+
+        h1 {
+            font-size: 5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            line-height: 5.5rem;
+
+            span {
+                color: #31d7a9;
+                font-weight: 700;
+            }
+        }
+
+        p {
+            font-size: 1.75rem;
+        }
+    }
+
+    .tab-header {
+        text-transform: uppercase;
+        text-align: center;
+
+        h6 {
+            color: $green;
+            font-size: 1.125rem;
+            font-weight: 600;
+            line-height: 1.5rem;
+        }
+
+        h3 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            line-height: 2.3rem;
+            color: white;
+        }
+    }
+
+    .tab-area {
+        background: rgba(21, 34, 126, 0.8);
+        padding: 1.875rem;
+
+        margin-top: 3.125rem;
+
+        .filter-area {
+            img {
+                @include img-fit(2.5rem, 2.5rem, cover, 50%);
+            }
+
+            span {
+                color: $green;
+                font-weight: 600;
+
+                margin: 0 1.2rem 0 0.625rem;
+            }
+        }
+    }
+}

@@ -1,10 +1,11 @@
 import "../../public/styles/index.scss"
 
+import { Banner } from "@/components/Banner/Banner";
 import { Header } from "@/components/Header/Header";
-import { Inter } from "next/font/google";
 import type { Metadata } from "next";
+import { Montserrat } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
