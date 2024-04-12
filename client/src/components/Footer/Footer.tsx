@@ -26,12 +26,14 @@ export function Footer(props: IFooterProps) {
                 subtitle="TO GET EXCLUSIVE BENIFITS"
             >
                 <div className="newsletter-wrapper">
+
                     <div className="newsletter-subcribe">
                         <input type="text" placeholder="Your Email Address" />
                         <button>subcribe</button>
                     </div>
 
                     <p>We respect your privacy, so we never share your info</p>
+
                 </div>
             </Tab>
 
