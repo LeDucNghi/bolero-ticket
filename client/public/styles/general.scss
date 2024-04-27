@@ -48,3 +48,10 @@
     -webkit-line-clamp: 1;
     white-space: pre-wrap;
 }
+
+@mixin backgroundImg($bg: "", $size: contain) {
+    background-image: url($bg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: $size;
+}

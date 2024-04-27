@@ -1,3 +1,5 @@
+"use client"
+
 import "./Header.scss"
 
 import * as React from 'react';
@@ -6,12 +8,17 @@ import { Button } from "@mui/material";
 import Image from 'next/image';
 import Link from "next/link";
 import { images } from '@/constants';
+import { usePathname } from "next/navigation";
 
 export interface IHeaderProps {
 }
 
 export function Header(props: IHeaderProps) {
-    return (
+    const pathname = usePathname()
+
+    if (pathname.startsWith("/sign")) return
+
+    else return (
         <div className='w-full header-container flex-center'>
             <div className="header-wrapper flex-space-center">
                 <div className="header-logo">

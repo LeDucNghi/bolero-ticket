@@ -10,11 +10,16 @@ import Image from "next/image";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { Tab } from "../Tab/Tab";
 import { images } from "@/constants";
+import { usePathname } from "next/navigation";
 
 export interface IFooterProps {
 }
 
 export function Footer(props: IFooterProps) {
+    const pathname = usePathname()
+
+    if (pathname.startsWith("/sign")) return
+
     return (
         <footer>
             <Image src={images.footerShape} alt="" layout="fill" />

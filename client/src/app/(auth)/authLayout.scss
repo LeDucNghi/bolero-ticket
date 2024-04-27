@@ -1,0 +1,29 @@
+@import "../../../public/styles/index.scss";
+
+.auth-container {
+    width: 100%;
+    height: 100vh;
+
+    @include backgroundImg("../../public/assets/account-bg.jpg", cover);
+
+    background-color: transparent;
+
+    .auth-card {
+        padding: 3.75rem 2.8125rem;
+
+        .card-header {
+            text-transform: uppercase;
+            font-weight: 600;
+
+            span {
+                font-size: 1.5rem;
+                color: $green;
+            }
+
+            h2 {
+                font-size: 2.5rem;
+                color: white;
+            }
+        }
+    }
+}

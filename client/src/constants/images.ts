@@ -1,3 +1,4 @@
+import authBg from "../../public/assets/account-bg.jpg";
 import banner02 from "../../public/assets/banner02.jpg";
 import cinema from "../../public/assets/cinema.png";
 import city from "../../public/assets/city.png";
@@ -18,4 +19,6 @@ export const images = {
   date,
 
   footerShape,
+
+  authBg,
 };
