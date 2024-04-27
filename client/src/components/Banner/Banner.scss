@@ -4,7 +4,7 @@
     position: relative;
 
     width: 100%;
-    height: 100vh;
+    height: 80vh;
 
     .banner-backdrop {
         position: absolute;
@@ -45,7 +45,7 @@
         color: white;
 
         h1 {
-            font-size: 5rem;
+            font-size: 4rem;
             font-weight: 700;
             text-transform: uppercase;
             line-height: 5.5rem;
@@ -57,57 +57,69 @@
         }
 
         p {
-            font-size: 1.75rem;
+            font-size: 1.5rem;
         }
     }
 
-    .tab-content {
-        .MuiFormControl-root {
-            padding-bottom: 1rem;
+    .banner-tab {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -10rem;
 
-            label {
-                color: white;
-            }
+        width: 70%;
 
-            label.Mui-focused {
-                color: white;
-            }
+        font-size: 0.8rem;
 
-            .MuiInput-root::before {
-                border-bottom-color: white;
-            }
+        .tab-content {
+            .MuiFormControl-root {
+                padding-bottom: 1rem;
+                font-size: 0.8rem;
 
-            .MuiOutlinedInput-root {
-                fieldset {
-                    border-color: white;
+                label {
+                    color: white;
                 }
 
-                hover fieldset {
-                    border-color: white;
+                label.Mui-focused {
+                    color: white;
                 }
 
-                Mui-focused fieldset {
-                    border-color: yellow;
+                .MuiInput-root::before {
+                    border-bottom-color: white;
+                }
+
+                .MuiOutlinedInput-root {
+                    fieldset {
+                        border-color: white;
+                    }
+
+                    hover fieldset {
+                        border-color: white;
+                    }
+
+                    Mui-focused fieldset {
+                        border-color: yellow;
+                    }
                 }
             }
-        }
 
-        .tab-area {
-            background: rgba(21, 34, 126, 0.7);
-            padding: 1.875rem;
+            .tab-area {
+                background: rgba(21, 34, 126, 0.7);
+                padding: 1.875rem;
 
-            margin-top: 3.125rem;
+                margin-top: 3.125rem;
 
-            .filter-area {
-                img {
-                    @include img-fit(2.5rem, 2.5rem, cover, 50%);
-                }
+                .filter-area {
+                    img {
+                        @include img-fit(2.5rem, 2.5rem, cover, 50%);
+                    }
 
-                span {
-                    color: $green;
-                    font-weight: 600;
+                    span {
+                        color: $green;
+                        font-weight: 600;
 
-                    margin: 0 1.2rem 0 0.625rem;
+                        margin: 0 1.2rem 0 0.625rem;
+                    }
                 }
             }
         }

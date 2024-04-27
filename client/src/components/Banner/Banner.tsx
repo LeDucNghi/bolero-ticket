@@ -33,17 +33,10 @@ export function Banner({ bannerBg }: IBannerProps) {
                 <p>Buy movie tickets in advance, find movie times watch trailers, read movie reviews and much more</p>
             </div>
 
-            <Tab style={{
-                position: "absolute",
-                left: "50%",
-                transform: "translateX(-50%)",
-                bottom: "-10rem"
-            }}
+            <Tab className="banner-tab"
                 bgUrl={images.ticketBg.src}
             >
                 <div className="tab-content">
-
-
                     <div className="tab-area w-full flex-space-center">
                         <TextField id="standard-basic" label="Search for Movies" variant="standard" />
 
