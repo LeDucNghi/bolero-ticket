@@ -1,11 +1,12 @@
 import * as React from 'react';
 
 export interface IMovieProps {
-    id: string
+    params: {
+        id: string
+    }
 }
 
-export default function Movie({ id }: IMovieProps) {
-    console.log("🚀 ~ Movie ~ id:", id)
+export default function MovieItemPage({ params: { id } }: IMovieProps) {
 
     return (
         <div>

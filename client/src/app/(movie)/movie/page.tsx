@@ -12,3 +12,4 @@ export default function Movies(props: IpageProps) {
         </div>
     );
 }
+

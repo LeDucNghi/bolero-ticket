@@ -18,7 +18,7 @@ export interface IFooterProps {
 export function Footer(props: IFooterProps) {
     const pathname = usePathname()
 
-    if (pathname.startsWith("/sign")) return
+    if (pathname?.startsWith("/sign")) return
 
     return (
         <footer>

@@ -3,8 +3,11 @@ import "../../public/styles/index.scss";
 import { CssBaseline } from "@mui/material";
 import { Footer } from "@/components/Footer/Footer";
 import { Header } from "@/components/Header/Header";
+import { Loading } from "@/components/Loading/Loading";
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
+import PageTransition from "@/components/Loading/PageTransition";
+import { Suspense } from "react";
 
 const inter = Montserrat({ subsets: ["latin"] });
 
@@ -23,8 +26,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Header />
-
-        <CssBaseline />
 
         {children}
 

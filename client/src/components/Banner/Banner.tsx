@@ -13,11 +13,8 @@ export interface IBannerProps {
 }
 
 export function Banner({ bannerBg }: IBannerProps) {
-
-
     return (
         <div className='banner-container' >
-            <div className="banner-backdrop"></div>
 
             <div className="banner-image">
                 <Image src={bannerBg}

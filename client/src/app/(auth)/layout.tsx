@@ -6,19 +6,16 @@ import { Card, CardContent, CardHeader } from "@mui/material";
 
 export interface IAuthLayoutProps {
   children: React.ReactNode
-
-  title: string
-  subtitle: string
 }
 
-export default function AuthLayout({ children, title, subtitle }: IAuthLayoutProps) {
+export default function AuthLayout({ children }: IAuthLayoutProps) {
   return (
     <div className="auth-container flex-center">
       <Card className="auth-card">
-        <CardHeader
+        {/* <CardHeader
           title={title ? title : "hello"}
           subheader={subtitle ? subtitle : ""}
-        />
+        /> */}
 
         <CardContent >
           {children}
