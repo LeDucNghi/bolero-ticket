@@ -71,9 +71,7 @@ export default function SignUpForm(props: ISignUpFormProps) {
                 <CustomCheckbox
                     placement="end"
                     label="I Agree To The Terms, Privacy Policy And Fees"
-                    style={{
-                        color: "#6d7bba",
-                    }}
+                    color="#6d7bba"
                 />
             </div>
 

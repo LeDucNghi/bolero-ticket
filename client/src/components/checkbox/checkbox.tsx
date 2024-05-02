@@ -11,16 +11,24 @@ export interface ICustomCheckboxProps {
     label: string
 
     style?: React.CSSProperties
+    color?: string
 }
 
-export function CustomCheckbox({ placement, label, style }: ICustomCheckboxProps) {
+export function CustomCheckbox({ placement, label, style, color }: ICustomCheckboxProps) {
     return (
         <FormControlLabel
             style={style}
             value="end"
-            control={<Checkbox />}
+            control={<Checkbox sx={{
+                ...style,
+                color: color,
+                '&.Mui-checked': {
+                    color: color,
+                },
+            }} />}
             label={label}
             labelPlacement={placement ? placement : "end"}
+
         />
     );
 }

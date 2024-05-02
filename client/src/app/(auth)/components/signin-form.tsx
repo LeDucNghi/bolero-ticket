@@ -19,11 +19,9 @@ type Inputs = {
 
 export function SignInForm(props: ISignInFormProps) {
     const {
-        register,
         handleSubmit,
-        watch,
         control,
-        formState: { errors, isSubmitting },
+        formState: { isSubmitting },
     } = useForm<Inputs>({
         defaultValues: {
             email: "",
@@ -42,7 +40,6 @@ export function SignInForm(props: ISignInFormProps) {
                 control={control}
                 className="inputfield"
                 style={{ marginTop: "1rem" }}
-
             />
 
             <InputField
@@ -52,16 +49,13 @@ export function SignInForm(props: ISignInFormProps) {
                 className="inputfield"
                 control={control}
                 style={{ marginTop: "1rem" }}
-
             />
 
             <div className="form-checkgroup flex-space-center">
                 <CustomCheckbox
                     placement="end"
                     label="remember password"
-                    style={{
-                        color: "#6d7bba",
-                    }}
+                    color="#6d7bba"
                 />
                 &nbsp;
                 <Link href="/forget" >Forget Password</Link>
