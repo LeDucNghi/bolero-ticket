@@ -1,6 +1,6 @@
 "use client"
 
-import "./Footer.scss";
+import "./footer.scss";
 
 import { Button, IconButton } from "@mui/material";
 
@@ -8,7 +8,7 @@ import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import GoogleIcon from '@mui/icons-material/Google';
 import Image from "next/image";
 import InstagramIcon from '@mui/icons-material/Instagram';
-import { Tab } from "../Tab/Tab";
+import { Tab } from "../tab/tab";
 import { images } from "@/constants";
 import { usePathname } from "next/navigation";
 

@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { Banner } from '@/components/Banner/Banner';
+import { Banner } from '@/components/banner/banner';
 
 export interface IpageProps {
 }

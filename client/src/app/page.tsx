@@ -1,4 +1,4 @@
-import { Banner } from "@/components/Banner/Banner";
+import { Banner } from "@/components/banner/banner";
 import { BodyWrapper } from "@/widgets/BodyWrapper";
 
 export default function Home() {

@@ -1,6 +1,6 @@
 import { AppPropsWithLayout } from '@/models';
 import { CssBaseline } from '@mui/material';
-import PageTransition from '@/components/Loading/PageTransition';
+import PageTransition from '@/components/loading/page-transition';
 
 export default function App({ Component, pageProps }: AppPropsWithLayout) {
     return (

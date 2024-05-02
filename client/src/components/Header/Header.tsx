@@ -1,6 +1,6 @@
 "use client"
 
-import "./Header.scss"
+import "./header.scss"
 
 import * as React from 'react';
 

@@ -1,10 +1,10 @@
-import "./Banner.scss"
+import "./banner.scss"
 
 import * as React from 'react';
 
-import CustomSelect from "../CustomSelect/Select";
+import CustomSelect from "../custom-select/Select";
 import Image from 'next/image';
-import { Tab } from "../Tab/Tab";
+import { Tab } from "../tab/tab";
 import { TextField } from "@mui/material";
 import { images } from '@/constants';
 

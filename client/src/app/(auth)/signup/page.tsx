@@ -1,12 +1,15 @@
 import * as React from 'react';
 
+import AuthLayout from '@/components/Layouts/auth/auth-layout';
+import SignUpForm from '../components/signup-form';
+
 export interface ISignupPageProps {
 }
 
 export default function SignupPage(props: ISignupPageProps) {
     return (
-        <div>
-            signup page
-        </div>
+        <AuthLayout form='signup' title='welcome' subtitle='to bolero'>
+            <SignUpForm />
+        </AuthLayout>
     );
 }

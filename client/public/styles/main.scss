@@ -35,8 +35,6 @@ body {
         color 0.5s,
         background-color 0.5s;
 
-    background: $mainColor;
-
     text-rendering: optimizeLegibility;
     font-size: 16px;
 
@@ -61,10 +59,11 @@ input {
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
+input:-webkit-autofill:active,
+input:focus {
     -webkit-background-clip: text;
     -webkit-text-fill-color: #000;
-    background: transparent;
+    background-color: transparent;
     transition: background-color 0.3s ease-in-out 0s;
 }
 
