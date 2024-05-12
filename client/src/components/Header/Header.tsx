@@ -26,9 +26,9 @@ export function Header(props: IHeaderProps) {
     else return (
         <div className='w-full header-container flex-center'>
             <div className="header-wrapper flex-space-center">
-                <div className="header-logo">
+                <Link href="/" className="header-logo">
                     <Image src={images.logo} alt='logo' className="logo" />
-                </div>
+                </Link>
 
                 {/* {windowInnerWidth <= 990 ?
                     <label className="burger">

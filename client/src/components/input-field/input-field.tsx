@@ -1,3 +1,5 @@
+import "./input-field.scss"
+
 import * as React from 'react';
 
 import { Control, Controller, FieldValues, Path } from 'react-hook-form';
@@ -14,6 +16,8 @@ export type IInputFieldProps<T extends FieldValues> =
 
         label: string
         className?: string
+
+        autoFocus?: boolean
     }
 
 export function InputField<T extends FieldValues>(
@@ -24,7 +28,8 @@ export function InputField<T extends FieldValues>(
         variant,
         className,
         type,
-        style
+        style,
+        autoFocus
     }: IInputFieldProps<T>) {
     return (
         <Controller
@@ -37,7 +42,9 @@ export function InputField<T extends FieldValues>(
                     <TextField
                         id="standard-basic"
                         fullWidth
+                        autoFocus={autoFocus}
                         style={style}
+                        color='success'
                         className={className}
                         onChange={onChange}
                         onBlur={onBlur}

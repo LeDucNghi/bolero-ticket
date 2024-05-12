@@ -1,43 +1,4 @@
 form {
-    .inputfield {
-        label {
-            color: white;
-
-            &:focus {
-                color: white;
-            }
-        }
-
-        .MuiInput-root {
-            :focus {
-                border-bottom: 1px solid white;
-            }
-
-            input {
-                color: white;
-            }
-
-            border-bottom: 1px solid white;
-
-            :hover {
-                border-bottom: 1px solid white;
-            }
-        }
-
-        //     // &::before {
-        //     //     border-bottom: 1px solid white;
-
-        //     //     :hover{
-
-        //     //     }
-        //     // }
-
-        //     // &::after {
-        //     //     border-bottom: 1px solid white;
-        //     // }
-        // }
-    }
-
     .form-submit {
         .form-button {
             border-radius: 1.6rem;
