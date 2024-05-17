@@ -2,10 +2,9 @@ import "../../public/styles/index.scss";
 import "../../public/styles/main.scss";
 
 import { CssBaseline } from "@mui/material";
-import { Footer } from "@/components/footer/footer";
-import { Header } from "@/components/header/header";
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
+import PageTransition from "@/components/loading/page-transition";
 
 const inter = Montserrat({ subsets: ["latin"] });
 

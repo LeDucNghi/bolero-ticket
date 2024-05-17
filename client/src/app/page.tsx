@@ -1,5 +1,3 @@
-import { Banner } from "@/components/banner/banner";
-import { BodyWrapper } from "@/widgets/body-wrapper";
 import { MainLayout } from "@/components/Layouts/main/main-layout";
 
 export default function Home() {

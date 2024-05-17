@@ -1,6 +1,6 @@
 "use client"
 
-import "./Loading.scss"
+import "./loading.scss"
 
 import * as React from 'react';
 
@@ -17,7 +17,7 @@ export default function PageTransition({ children }: IPageTransitionProps) {
 
     return (
         <AnimatePresence >
-            <motion.div key={pathname}>
+            <motion.div className="page-transition-container" key={pathname}>
 
                 {children}
 

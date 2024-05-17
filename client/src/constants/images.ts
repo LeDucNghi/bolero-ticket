@@ -8,6 +8,7 @@ import footerShape from "../../public/assets/footer-shape.png";
 import google from "../../public/assets/icons/search.png";
 import logo from "../../public/assets/logo.png";
 import newsLetter from "../../public/assets/newslater-bg01.jpg";
+import notFound from "../../public/assets/not-found.png";
 import ticketBg from "../../public/assets/ticket-bg01.jpg";
 import twitter from "../../public/assets/icons/twitter.png";
 
@@ -24,6 +25,7 @@ export const images = {
   footerShape,
 
   authBg,
+  notFound,
 
   facebook,
   twitter,

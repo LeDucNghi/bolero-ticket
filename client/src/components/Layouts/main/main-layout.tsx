@@ -3,9 +3,9 @@ import "./main-layout.scss"
 import * as React from 'react';
 
 import { Banner } from "@/components/banner/banner";
-import { BodyWrapper } from "@/widgets/body-wrapper";
 import { Footer } from '@/components/footer/footer';
 import { Header } from '@/components/header/header';
+import PageTransition from "@/components/loading/page-transition";
 
 export interface IMainLayoutProps {
   children: React.ReactNode
@@ -15,15 +15,18 @@ export interface IMainLayoutProps {
 
 export function MainLayout({ children, bannerBg }: IMainLayoutProps) {
   return (
-    <>
+    <PageTransition>
       <Header />
 
       <Banner bannerBg={bannerBg} />
 
-      <BodyWrapper style={{ height: "100vh" }} >
+      <div className='relative top-full'
+        style={{ backgroundColor: "#001232" }}
+      >
         {children}
-      </BodyWrapper>
+      </div>
+
       <Footer />
-    </>
+    </PageTransition>
   );
 }
