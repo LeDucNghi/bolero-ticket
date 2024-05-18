@@ -16,7 +16,7 @@ export default function PageTransition({ children }: IPageTransitionProps) {
     const pathname = usePathname()
 
     return (
-        <AnimatePresence >
+        <AnimatePresence mode="wait" >
             <motion.div className="page-transition-container" key={pathname}>
 
                 {children}

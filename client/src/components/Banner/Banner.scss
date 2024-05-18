@@ -45,7 +45,7 @@
 
         text-align: center;
 
-        z-index: 20;
+        z-index: 2;
 
         color: white;
 
@@ -99,7 +99,7 @@
                         border-color: white;
                     }
 
-                    hover fieldset {
+                    :hover fieldset {
                         border-color: white;
                     }
 

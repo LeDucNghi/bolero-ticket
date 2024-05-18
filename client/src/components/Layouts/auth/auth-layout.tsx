@@ -26,7 +26,7 @@ export default function AuthLayout({ children, title, subtitle, form }: IAuthLay
   const router = useRouter()
 
   return (
-    <PageTransition >
+    <>
       <div className="auth-container flex-center" >
         <Tooltip title="Back" arrow>
           <IconButton
@@ -77,6 +77,6 @@ export default function AuthLayout({ children, title, subtitle, form }: IAuthLay
           </ul>
         </Paper>
       </div>
-    </PageTransition>
+    </>
   );
 }

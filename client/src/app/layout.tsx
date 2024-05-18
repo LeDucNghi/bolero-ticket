@@ -2,6 +2,8 @@ import "../../public/styles/index.scss";
 import "../../public/styles/main.scss";
 
 import { CssBaseline } from "@mui/material";
+import { Footer } from "@/components/footer/footer";
+import { Header } from "@/components/header/header";
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import PageTransition from "@/components/loading/page-transition";
@@ -29,7 +31,15 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <CssBaseline />
-        {children}
+        <PageTransition >
+
+          <Header />
+
+          {children}
+
+          <Footer />
+
+        </PageTransition>
       </body>
     </html>
   );

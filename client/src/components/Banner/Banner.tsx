@@ -24,7 +24,7 @@ export function Banner({ bannerBg }: IBannerProps) {
                 />
             </div>
 
-            <div className="banner-content">
+            {/* <div className="banner-content">
                 <h1>get <span>movie</span> tickets</h1>
 
                 <p>Buy movie tickets in advance, find movie times watch trailers, read movie reviews and much more</p>
@@ -56,7 +56,7 @@ export function Banner({ bannerBg }: IBannerProps) {
                         </div>
                     </div>
                 </div>
-            </Tab>
+            </Tab> */}
         </div>
     );
 }

@@ -18,8 +18,6 @@ export interface IHeaderProps {
 export function Header(props: IHeaderProps) {
     const pathname = usePathname()
     const router = useRouter()
-    // const { windowInnerWidth } = useWindowSize()
-
 
     if (pathname?.startsWith("/sign")) return
 
@@ -30,14 +28,6 @@ export function Header(props: IHeaderProps) {
                     <Image src={images.logo} alt='logo' className="logo" />
                 </Link>
 
-                {/* {windowInnerWidth <= 990 ?
-                    <label className="burger">
-                        <input type="checkbox" id="burger" />
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </label>
-                    : */}
                 <ul className='menu flex-center py-3 px-1'>
                     <li className='menu-item'>
                         <Link
@@ -86,7 +76,6 @@ export function Header(props: IHeaderProps) {
                         </Button>
                     </li>
                 </ul>
-                {/* } */}
             </div>
         </div>
     );

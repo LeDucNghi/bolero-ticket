@@ -15,9 +15,7 @@ export interface IMainLayoutProps {
 
 export function MainLayout({ children, bannerBg }: IMainLayoutProps) {
   return (
-    <PageTransition>
-      <Header />
-
+    <>
       <Banner bannerBg={bannerBg} />
 
       <div className='relative top-full'
@@ -26,7 +24,6 @@ export function MainLayout({ children, bannerBg }: IMainLayoutProps) {
         {children}
       </div>
 
-      <Footer />
-    </PageTransition>
+    </>
   );
 }
