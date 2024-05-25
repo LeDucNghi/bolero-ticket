@@ -1,11 +1,8 @@
-import "./main-layout.scss"
+import "./main-layout.scss";
 
 import * as React from 'react';
 
 import { Banner } from "@/components/banner/banner";
-import { Footer } from '@/components/footer/footer';
-import { Header } from '@/components/header/header';
-import PageTransition from "@/components/loading/page-transition";
 
 export interface IMainLayoutProps {
   children: React.ReactNode
@@ -18,12 +15,11 @@ export function MainLayout({ children, bannerBg }: IMainLayoutProps) {
     <>
       <Banner bannerBg={bannerBg} />
 
-      <div className='relative top-full'
+      <div className='relative top-full pt-[6.25rem]'
         style={{ backgroundColor: "#001232" }}
       >
         {children}
       </div>
-
     </>
   );
 }

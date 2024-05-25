@@ -26,6 +26,7 @@ export default function NotFoundPage(props: INotFoundPageProps) {
                     variant='contained'
                     className='font-bold'
                     onClick={() => router.push("/")}
+                    active
                 >
                     <>
                         back to home

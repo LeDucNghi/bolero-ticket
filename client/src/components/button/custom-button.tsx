@@ -13,11 +13,18 @@ export interface ICustomButtonProps {
     variant?: "contained" | "outlined" | "text"
 
     className?: string
+
+    active: boolean
 }
 
-export function CustomButton({ children, onClick, variant, className, style }: ICustomButtonProps) {
+export function CustomButton({ children, onClick, variant, className, style, active }: ICustomButtonProps) {
     return (
-        <Button variant={variant} onClick={onClick} className={className} style={style}>
+        <Button
+            variant={variant}
+            onClick={onClick}
+            className={`custom-button ${active ? "isActive" : ""} ${className}`}
+            style={style}
+        >
             {children}
         </Button>
     );

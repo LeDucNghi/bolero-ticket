@@ -34,6 +34,12 @@
     align-items: center;
 }
 
+.button {
+    border-radius: 1.6rem;
+    padding: 0.625rem 3.06rem;
+    background-image: -webkit-linear-gradient(169deg, #5560ff 17%, #aa52a1 63%, #ff4343 100%);
+}
+
 @mixin img-fit($width: 100%, $height: 100%, $objectFit: cover, $radius: 0%) {
     width: $width;
     height: $height;
